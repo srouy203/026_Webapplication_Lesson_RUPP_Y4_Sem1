@@ -2,28 +2,33 @@
    <head>
       <title>ទំព័រដើម</title>
       <!-- 
-               CSS rule ច្បាប់នៃរចនា ដែលរួមមាន selector និង declaration យ៉ាងហោចណាស់មួយ។
-                  selector {declaration}
-               selector (អ្នកជ្រើសរើស) រើសយកធាតុណាមួយឬច្រើនយកមករចនា។
-               declaration ផ្សំពី property និង value។ 
-      
-               element selector ឬ type selector
-                  រើសធាតុមួយប្រភេទយកមករចនាដោយគ្រាន់តែសរសេរឈ្មោះរបស់វា។
-                  ឧ. រើសយកធាតុ a ទាំងអស់មករចនា។
-               a{text-decoration: none; color: black;}
-      
-               ID selector រើសយកធាតុដែលមានតែមួយគត់ក្នុងវេបផេក។
-                  ក្នុង HTML
-                     < id="អាយឌី">...</>
-                  ក្នុង CSS
-                     #អាយឌី { declaration }
-                     
-               Class selector រើសយកធាតុមួយ ឬច្រើ​នថិតក្នុងថ្នាក់បានបញ្ជាក់។
-                  ក្នុង HTML
-                     < id="ថ្នាក់">...</>
-                  ក្នុង CSS
-                     #ថ្នាក់ { declaration }
-            -->
+         CSS rule ច្បាប់នៃរចនា ដែលរួមមាន selector និង declaration យ៉ាងហោចណាស់មួយ។
+            selector {declaration}
+         selector (អ្នកជ្រើសរើស) រើសយកធាតុណាមួយឬច្រើនយកមករចនា។
+         declaration ផ្សំពី property និង value។ 
+
+         element selector ឬ type selector
+            រើសធាតុមួយប្រភេទយកមករចនាដោយគ្រាន់តែសរសេរឈ្មោះរបស់វា។
+            ឧ. រើសយកធាតុ a ទាំងអស់មករចនា។
+         a{text-decoration: none; color: black;}
+
+         ID selector រើសយកធាតុដែលមានតែមួយគត់ក្នុងវេបផេក។
+            ក្នុង HTML
+               < id="អាយឌី">...</>
+            ក្នុង CSS
+               #អាយឌី { declaration }
+               
+         Class selector រើសយកធាតុមួយ ឬច្រើ​នថិតក្នុងថ្នាក់បានបញ្ជាក់។
+            ក្នុង HTML
+               < id="ថ្នាក់">...</>
+            ក្នុង CSS
+               #ថ្នាក់ { declaration }
+
+         Group selector ផ្គុំអ្នកជ្រើសរើស (id selector, type selector...)
+          ជាក្រុមដោយប្រើសញ្ញាក្បៀស។
+         ឧ. h1, h2, h3 {font-family: "Khmer OS Moul Light"};
+         
+      -->
       <style>
          a {
             text-decoration: none;
@@ -46,6 +51,8 @@
             border: 1px solid black;
             border-radius: 8px;
          }
+
+         h1, h2, h3 {font-family: "Khmer OS Moul Light"};
       </style>
       <!-- ធាតុ style សម្រាប់សរសេរ CSS ក្នុងវេបផេកមួយ។ -->
 
