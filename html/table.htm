@@ -1,7 +1,33 @@
 <html>
    <head>
       <title>តារាង - table</title>
-            <Link rel="stylesheet" href="../css/e5.css" type="text/css" />
+      <Link rel="stylesheet" href="../css/e5.css" type="text/css" />
+      <style>
+         table, th, td{
+            border: 1px solid black;
+         }
+         table{
+            border-collapse: collapse;
+            text-align: center;
+            width: 35%;
+            margin: 16px auto;
+         }
+         tr:nth-child(2n){
+            background-color: rgb(159, 159, 159); color: white;
+         }
+         tr:nth-child(2n+1){
+            background-color: rgb(124, 190, 255); color: white;
+         }
+         tr:nth-child(1){
+            background-color: rgb(72, 0, 255); color: white;
+         }
+         tr:nth-child(8){
+            background-color: rgb(0, 0, 0); color: white;
+         }
+         tr:hover{
+            background-color: orange;
+         }
+      </style>
    </head>
    <body>
       <div id="hMenu"><!-- horizontal menu ម៉ឺនុយផ្តេក-->
@@ -13,7 +39,16 @@
          <a href="media.htm">ពហុព័ត៌មាន</a>
       </div>
 
-      <table border="1">
+      <!-- រចនាតារាង Styling table
+         border រចនាស៊ុមនៃ table, th, ឬ td
+         border-collapse: collapse វេញស៊ុមនៃតារាង នឹងក្រឡាចូលគ្នាជាស៊ុមតែមួយ។
+
+         nth-child(លេខរៀង ឬអថេរ)​ ជ្រើសរើសរកកូនធាតុទីមួយ__ដូចជាកូនទី 1 ទី 2។ល។
+         ឬកូនធាតុមានលំដាប់រៀងគូរសេស។
+
+      -->
+
+      <table>
          <tr><th>ល.រ</th><th>ឈ្មោះនិស្សិត</th><th>លេខទូរស័ព្ទ</th></tr>
          <tr><td>១</td><td>ហង្ស វាសនាជេមស៍</td><td>០១0៣៤៥៦៧៨</td></tr>
          <tr><td>២</td><td>ហេង សេដ្ឋសេវ័ន្ត</td><td>០១១៣៤៥៦៧៨</td></tr>
