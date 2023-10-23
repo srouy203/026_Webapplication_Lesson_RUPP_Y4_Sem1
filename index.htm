@@ -1,53 +1,47 @@
 <html>
-   <head>
-      <title>ទំព័រដើម</title>
-      <!-- 
-         CSS rule ច្បាប់នៃរចនា ដែលរួមមាន selector និង declaration យ៉ាងហោចណាស់មួយ។
-            selector {declaration}
-         selector (អ្នកជ្រើសរើស) រើសយកធាតុណាមួយឬច្រើនយកមករចនា។
-         declaration ផ្សំពី property និង value។ 
+  <head>
+    <title>ទំព័រដើម</title>
+    <Link rel="stylesheet" href="css/e5.css" type="text/css" />
+    <!--
+      css rule ច្បាប់នៃរចនា​ ​ដែលរួមមាន​ selector and declaration យ៉ាងហោចណាស់មួយ។
+         selector { declaration }
+      selector ( អ្នកជ្រើសរើស​ )​ រើសយកធាតុមួយឬច្រើនយកមករចនា។
+      declaration ផ្សំពី property and value ៕
 
-         element selector ឬ type selector
-            រើសធាតុមួយប្រភេទយកមករចនាដោយគ្រាន់តែសរសេរឈ្មោះរបស់វា។
-            ឧ. រើសយកធាតុ a ទាំងអស់មករចនា។
-         a{text-decoration: none; color: black;}
+   element selector or type selector រើសធាតុមួយប្រភេទយកមករចនាដោយគ្រាន់តែសរសេឈ្នោះរបស់វា។
+   ឧ.រើសយកធាតុ​ a ​ទាំងអស់មករចនា។
+   ID ​selector ​រើសយកធាតុដែលមានតែមួយគត់ក្នុងវេបផេក។
+   ក្នុង​ HTML 
+   <id= "អាយឌិ">...</>
+   ក្នុង​ css 
+   #អាយឌី { declaration;}
+   -->
 
-         ID selector រើសយកធាតុដែលមានតែមួយគត់ក្នុងវេបផេក។
-            ក្នុង HTML
-               < id="អាយឌី">...</>
-            ក្នុង CSS
-               #អាយឌី { declaration }
-               
-         Class selector រើសយកធាតុមួយ ឬច្រើ​នថិតក្នុងថ្នាក់បានបញ្ជាក់។
-            ក្នុង HTML
-               < id="ថ្នាក់">...</>
-            ក្នុង CSS
-               #ថ្នាក់ { declaration }
-      -->
-      <style>
-         a{text-decoration: none; color: black;}
-         /* រើសធាតុមានអាយឌីសម្គាល់ current យកមករចនា។ */
-         #current{
-            background-color: blue; 
-            color: white; 
-            padding: 8px 16px; 
-            border-radius: 8px;
-         }
-      </style>
-      <!-- ធាតុ style សម្រាប់សរសេរ CSS ក្នុងវេបផេកមួយ។ -->
+ 
+    <style>
+      a {
+        text-decoration: none;
+        color: red;
+      }
+    </style>
+    <!--
+      // a call selector
+    // color call property
+    // none call value
+     ធាតុ style សម្រាប់សរសេរ css ​ក្នុងវេបផេកមួយ-->
+  </head>
 
-   </head>
-   <body>
-      <div id="hMenu"><!-- horizontal menu ម៉ឺនុយផ្តេក-->
-         <a id="current" href="#">ទំព័រដើម</a>
-         <a href="html/text.htm">អត្ថបទ</a>
-         <a href="html/image.htm">រូបភាព</a>
-         <a href="html/list.htm">បញ្ជី</a>
-         <a href="html/table.htm">តារាង</a>
-         <a href="html/media.htm">ពហុព័ត៌មាន</a>
-      </div>
-      <a href="html/media.htm#bottom">
-         ទៅ media.htm និងឆ្ពោះទៅកាន់បាតនៃវេបផេក
-      </a>
-   </body>
+  <body>
+    
+    <div id="hMenu">
+      <!-- horizontal menu ម៉ឺនុយផ្តេក-->
+      <a id="current" href="#">ទំព័រដើម</a>
+      <a href="html/text.htm">អត្ថបទ</a>
+      <a href="html/image.htm">រូបភាព</a>
+      <a href="html/list.htm">បញ្ជី</a>
+      <a href="html/table.htm">តារាង</a>
+      <a href="html/media.htm">ពហុព័ត៌មាន</a>
+    </div>
+    <a href="html/media.htm#bottom"> ទៅ media.htm និងឆ្ពោះទៅកាន់បាតនៃវេបផេក </a>
+  </body>
 </html>

@@ -1,0 +1,227 @@
+<html>
+  <head>
+    <title>ទំព័រដើម</title>
+    <!--
+      02/10/20023
+      css rule ច្បាប់នៃរចនា​ ​ដែលរួមមាន​ selector and declaration យ៉ាងហោចណាស់មួយ។
+         selector { declaration }
+      selector ( អ្នកជ្រើសរើស​ )​ រើសយកធាតុមួយឬច្រើនយកមករចនា។
+      declaration ផ្សំពី property and value ៕
+
+   element selector or type selector រើសធាតុមួយប្រភេទយកមករចនាដោយគ្រាន់តែសរសេឈ្នោះរបស់វា។
+   ឧ.រើសយកធាតុ​ a ​ទាំងអស់មករចនា។
+
+   ID ​selector ​រើសយកធាតុដែលមានតែមួយគត់ក្នុងវេបផេក។
+      ក្នុង​ HTML 
+      <id= "អាយឌិ">...</>
+      ក្នុង​ css 
+      #អាយឌី { declaration;}
+
+   class ​selector ​រើសយកធាតុដែលមានតែមួយគត់ក្នុងវេបផេក។
+      ក្នុង​ HTML 
+      < class ="ថ្នាក់"> ...</>
+      ក្នុង​ css 
+      .ថ្នាក់​ {declaration;}
+
+  Group selector ផ្ដុំអ្នកជ្រើសរើស (id selector,type selector,.. ជាក្រុមដោយប្រើសញ្ញាក្បៀស​។)
+  ឧ. ​h1,h2,h3 {font-family: "khmer OS Muol Light";}
+   -->
+
+    <!-- 
+    06/10/20023
+    Style ជាគុមលក្ខលះសម្រាប់សរសេរ​ css ក្នុងធាតុមួយ។
+    <Style ="property:value;"> ... </Style>
+    styleing text ការរចនាអត្ថបទ
+    color: លេខឬឈ្មោះសម្គាល់ព៍ណ។
+
+    text-align:left|center|right;
+    តម្រឹមអត្ថបទឲស្មើខាងឆ្វេង​ ចំកណ្ដាល​ ឬ​ ​ស្នើខាងស្ដាំ។
+
+    text-decoration:underline|overline|line-through|none
+    តែងអត្ថបទដោយកូសបន្ទាត់ខាងក្រោមខាងលើកាត់អត្ថបឬគ្មាន​ *ទម្រង់កាត់
+    text-decoration:text-decoration-line បន្ទាត់
+                    text-decoration-color​ ព៍ណបន្ទាត់
+                    text-decoration-style​ ក្បាច់បន្ទាត់
+                    text-decoration-thickness កម្រាល់បន្ទាត់
+    ឧ. តែងអត្ថបទដោយគូសបន្ទាត់ខាងលើព៍ណខៀវ បន្ទាត់ពីរជាន់ កម្រាល់ ២px។
+    
+    text-transform:uppercase|lowercase|capitalize
+    ឧ. ប្លែងអត្ថបទជាអក្សរទាំងអស់ តូចទាំងអស់ ឬ​ ធំដើមនៃពាក្យនីមួយ
+        line-hight:170% កម្ពស់បន្ទាត់(ចាំបាច់កំណត់សម្រាប់ភាសាខ្មែរ)។
+        text-indent:64px ចុះដើមបន្ទាត់(ចុះបន្ទាត់ថ្មីហើយចូលក្នុង៦៤px)។
+        text-shadow:ទៅស្ដាំប៉ុន្នានpx ចុះក្តោមប៉ុន្មានpx ព៍ណស្រមោល។
+
+  styling font ការរចនាពុម្ភអក្សរ
+    font-family:ឈ្មោះពុម្ភអក្សរយ៉ាងហោចណាស់មួយនិងបញ្ជប់ដោយប្រភេទពុម្ភអក្សរ
+    font-style:italic អក្សរទ្រេត  
+    font-variant: small-caps: អក្សរធំទាប  
+    font-size: 16px ទំហំអក្សរ  
+    font-weight: bold អក្សរដិតច្បាស់  
+
+    * ទម្រង់កាត់
+    font: ទំហំ​ ស្រឡាយពុម្ភអក្សរ(font-family)
+    font: ទ្រេត ពុម្ភអក្សរធំទាប​ ដិតច្បាស់​ ទំហំ/កម្ពស់បន្ទាត់ ស្រឡាយពុម្ភអក្សរ
+
+    ពុម្ភអក្សរមាន​៥
+    1- Serif
+    2- Sans-serif
+    3- Monospace
+    4- Cursive
+    5- Fantasy
+  -->
+
+  <!------------ 09-10-2023 -------------->
+  <!-- 
+    ក្នុង CSS ចាត់ធាតុរបស់ HTML ទាំងអស់ជាប្រអប់ មានដូចជា ប្រអប់ខ្លឹមសារ (content)
+    ប្រអប់គម្លាតទ្រនាប់ (padding) ប្រអប់ស៊ុម (border) និងប្រអប់រឹម (margin)។​ល។ 
+
+    - ប្រអប់ខ្លឹមសារ
+      width ទទឹង និង height កម្ពស់
+    - ប្រអប់គម្លាតទ្រនាប់
+      padding-top គម្លាតទ្រនាប់ខាងលើ
+      padding-right គម្លាតទ្រនាប់ខាងស្តាំ
+      padding-bottom គម្លាតទ្រនាប់ខាងក្រោម
+      padding-left គម្លាតទ្រនាប់ខាងឆ្វេង
+    ទម្រង់កាត់
+      padding លើ ស្តាំ ក្រោម ឆ្វេង
+      padding លើ ឆ្វេងស្តាំ ក្រោម
+      padding លើក្រោម ឆ្វេងស្តាំ
+      padding លើក្រោមឆ្វេងស្តាំ
+
+    - ប្រអប់ស៊ុម
+      border-style ក្បាច់ស៊ុម dotted dashed solid double inset outset groove ridge none hide
+      border-width កម្រាស់ស៊ុម
+      border-color តំណស៊ុម
+
+      ទម្រង់កាត់
+        border: កម្រាស់ ក្បាច់ ព័ណ
+        border-right: កម្រាស់ ក្បាច់ ព័ណ
+        border-left: កម្រាស់ ក្បាច់ ព័ណ
+        border-bottom: កម្រាស់ ក្បាច់ ព័ណ
+  -->
+
+  <!---------------- 16-10-2023 --------------->
+
+  <!-- 
+    - ប្រអប់រឹម (margin box)
+      margin-top រឹមខាងលើ
+      margin-right រឹមខាងស្តាំ
+      margin-bottom រឹមខាងក្រោម
+      margin-left រឹមខាងឆ្វេង
+    ទម្រង់កាត់
+      margin លើ ស្តាំ ក្រោម ឆ្វេង
+      margin លើ ឆ្វេងស្តាំ ក្រោម
+      margin លើក្រោម ឆ្វេងស្តាំ
+      margin លើក្រោមឆ្វេងស្តាំ
+
+    - Block Element ជាធាតុបង្ហាញពីលើចុះក្រោម ហើយមានទទឹងប៉ុនផ្ទៃទំនេរ។
+    ឧ. h1, h2 ...., h6, p, ul,ol, dl, table។ល។
+    (margin left និង right ឬ top និង bottom មិនសរុបចូលគ្នាទេ តែវានឹងយកខាងណាដែលធំជាង)
+
+
+    - Inline Element ជាធាតុបង្ហាញពីឆ្វេងទៅស្តាំ ហើយមានទទឹងប៉ុនខ្លឹមសារ (ព័ត៌មាន)។ល។
+    ឧ. a, span, sub, sup។ល។
+    (Inline យើងមិនអាចកំណត់ width និង heigh បានទេ។)
+    (Inline មិនអាចប្រើ margin top និង bottom បានទេ)
+
+    Inline Element និង Block Element គម្លាតពីគ្នាពី 3px ទៅ 5px បើចង់លុបគម្លាតនេះត្រូវដាក់
+	  margin-left ឬ margin-right ចន្លោះពី -3px ទៅ -5px
+
+   -->
+
+
+    <style>
+      /* រើសធាតុទាំងណាថិតក្នុងថ្នាក់​​ medium */
+
+      h1,
+      h2,
+      h3 {
+        font-family: "Khmer OS Muol Light";
+      }
+
+      /* រើសធាតុទាំងណាថិតក្នុងថ្នាក់​​ media */
+      .media {
+        display: block;
+        width: 500px;
+        height: 300px;
+        margin: 16px auto;
+        border: 1px solid gray;
+        border-radius: 8px;
+      }
+
+      /* រើសធាតុមានអាយឌីសម្គាល់​ cureent យកមករចនា។​ */
+      #current {
+        background-color: blue;
+        color: white;
+        padding: 8px 16px;
+        border-radius: 8px;
+      }
+
+      a {
+        text-decoration: none;
+        color: red;
+      }
+    </style>
+    <!--
+    - a call selector
+    - color call property
+    - none call value
+     ធាតុ style សម្រាប់សរសេរ css ​ក្នុងវេបផេកមួយ-->
+  </head>
+
+  <body>
+
+    <!-- 06/10/2023 -->
+    <h1 
+    style="
+    text-shadow: 2px 2px gray;
+    text-align: center;
+    color: dodgerblue;
+    text-decoration: overline blue double 2px;
+    ">
+      សេចក្ដីណែនាំឲស្កាល់
+    </h1>
+    <br>
+    <p 
+    style="
+    font-size: 30px;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    text-indent: 64px ;
+    text-transform: uppercase;
+    ">
+    The mappedBy attribute contains the name ការរចនាពុម្ភអក្សរ
+  </p>
+   <!-- end -->
+
+    <div id="hMenu">
+      <!-- horizontal menu ម៉ឺនុយផ្តេក-->
+      <a id="current" href="../index.htm">ទំព័រដើម</a>
+      <a href="html/text.htm">អត្ថបទ</a>
+      <a href="html/image.htm">រូបភាព</a>
+      <a href="html/list.htm">បញ្ជី</a>
+      <a href="html/table.htm">តារាង</a>
+      <a id="current" href="html/media.htm">ពហុព័ត៌មាន</a>
+    </div>
+    <!-- <a href="html/media.htm#bottom"> ទៅ media.htm និងឆ្ពោះទៅកាន់បាតនៃវេបផេក </a> -->
+    <br />
+    <img class="media" src="/media/RUPP1.jpg" alt="" />
+    <img class="media" src="/media/RUPP2.jpg" alt="" />
+    <img class="media" src="/media/RUPP3.jpg" alt="" />
+    <img class="media" src="/media/RUPP4.jpg" alt="" />
+    <img class="media" src="/media/RUPP5.jpg" alt="" />
+
+    <p style="border: 5px solid black;">solid</p>
+    <p style="border: 5px dotted black;">dotted</p>
+    <p style="border: 5px dashed black;">dashed</p>
+    <p style="border: 5px double black;">double</p>
+    <p style="border: 16px inset black;">inset</p>
+    <p style="border: 16px outset black;">outset</p>
+    <p style="border: 16px groove black;">groove</p>
+    <p style="border: 16px right black;">right</p>
+    <p style="border: 16px solid black;">solid</p>
+    <p style="border: none"></p>
+    <p style="border: hidden"></p>
+
+  </body>
+</html>

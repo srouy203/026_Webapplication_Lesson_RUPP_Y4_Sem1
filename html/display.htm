@@ -1,0 +1,47 @@
+<html>
+   <head>
+      <title>Display</title>
+
+      <!-- 
+        display: inline-block; ប្រែ inline element ជា inline-block គឺកូនកាត់ 
+        inline និង block។ កាត់ inline ត្រង់បង្ហាញពីឆ្វេងទៅស្តាំ និងកាត់ block ត្រង់
+        ប្រើ boxes ទាំងបួនបានដូច block element។
+     -->
+
+      <style>
+        .b, span{
+            background-color: yellow;
+            border: 1px solid black;
+        }
+        .b{
+            width: 170px;
+            height: 90px;
+        }
+        span{
+            /* margin: 0; */
+            /* line-height: 48px; */
+            /* display: inline-block; */
+            /* width: 120px; */
+            /* height: 30px; */
+        }
+      </style>
+   </head>
+   <body>
+        <div id="hMenu"><!-- horizontal menu ម៉ឺនុយផ្តេក-->
+            <a href="../index.htm">ទំព័រដើម</a>
+            <a id="current" href="#">អត្ថបទ</a>
+            <a href="image.htm">រូបភាព</a>
+            <a href="list.htm">បញ្ជី</a>
+            <a href="table.htm">តារាង</a>
+            <a href="media.htm">ពហុព័ត៌មាន</a>
+        </div>
+
+        <div class="b" style="margin-bottom: 16px;"></div>
+        <div class="b"></div>
+        <div class="b"></div>
+        <span>inline 1</span>
+        <span>inline two</span>
+        <span>inline three</span>
+
+   </body>
+</html>

@@ -1,65 +1,10 @@
 <html>
    <head>
       <title>ទំព័រដើម</title>
-      <!-- 
-         CSS rule ច្បាប់នៃរចនា ដែលរួមមាន selector និង declaration យ៉ាងហោចណាស់មួយ។
-            selector {declaration}
-         selector (អ្នកជ្រើសរើស) រើសយកធាតុណាមួយឬច្រើនយកមករចនា។
-         declaration ផ្សំពី property និង value។ 
-
-         element selector ឬ type selector
-            រើសធាតុមួយប្រភេទយកមករចនាដោយគ្រាន់តែសរសេរឈ្មោះរបស់វា។
-            ឧ. រើសយកធាតុ a ទាំងអស់មករចនា។
-         a{text-decoration: none; color: black;}
-
-         ID selector រើសយកធាតុដែលមានតែមួយគត់ក្នុងវេបផេក។
-            ក្នុង HTML
-               < id="អាយឌី">...</>
-            ក្នុង CSS
-               #អាយឌី { declaration }
-               
-         Class selector រើសយកធាតុមួយ ឬច្រើ​នថិតក្នុងថ្នាក់បានបញ្ជាក់។
-            ក្នុង HTML
-               < id="ថ្នាក់">...</>
-            ក្នុង CSS
-               #ថ្នាក់ { declaration }
-
-         Group selector ផ្គុំអ្នកជ្រើសរើស (id selector, type selector...)
-          ជាក្រុមដោយប្រើសញ្ញាក្បៀស។
-         ឧ. h1, h2, h3 {font-family: "Khmer OS Moul Light"};
-         
-      -->
-      <style>
-         a {
-            text-decoration: none;
-            color: black;
-         }
-      
-         /* រើសធាតុមានអាយឌីសម្គាល់ current យកមករចនា។ */
-         #current {
-            background-color: blue;
-            color: white;
-            padding: 8px 16px;
-            border-radius: 8px;
-         }
-
-         .medium {
-            display: block;
-            width: 500px;
-            height: 300px;
-            margin: 16px auto;
-            border: 1px solid black;
-            border-radius: 8px;
-         }
-
-         h1, h2, h3 {font-family: "Khmer OS Moul Light"};
-      </style>
-      <!-- ធាតុ style សម្រាប់សរសេរ CSS ក្នុងវេបផេកមួយ។ -->
-
    </head>
    <body>
       <div id="hMenu"><!-- horizontal menu ម៉ឺនុយផ្តេក-->
-         <a href="../index.htm" id="current">ទំព័រដើម</a>
+         <a href="../index.htm">ទំព័រដើម</a>
          <a href="text.htm">អត្ថបទ</a>
          <a href="image.htm">រូបភាព</a>
          <a href="list.htm">បញ្ជី</a>
@@ -121,11 +66,11 @@
 
    <h2>រូបភាព - image</h2>
    <h3>*.jpg</h3>
-   <img class="medium" src="../media/RUPP1.jpg" alt="សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ">
-   <img class="medium" src="../media/RUPP2.jpg" alt="សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញនាពេលរាត្រី">
-   <img class="medium" src="../media/RUPP3.jpg" alt="វិទ្យាស្ថានភាសាបរទេស">
-   <img class="medium" src="../media/RUPP4.jpg" alt="មជ្ឈមណ្ឌលសហប្រតិបត្តិការកម្ពុជា-ជប៉ុន">
-   <img class="medium" src="../media/RUPP5.jpg" alt="មជ្ឈមណ្ឌលសហប្រតិបត្តិការកម្ពុជា-កូរ៉េ">
+   <img src="../media/RUPP1.jpg" alt="សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ">
+   <img src="../media/RUPP2.jpg" alt="សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញនាពេលរាត្រី">
+   <img src="../media/RUP3.jpg" alt="វិទ្យាស្ថានភាសាបរទេស">
+   <img src="../media/RUPP4.jpg" alt="មជ្ឈមណ្ឌលសហប្រតិបត្តិការកម្ពុជា-ជប៉ុន">
+   <img src="../media/RUPP5.jpg" alt="មជ្ឈមណ្ឌលសហប្រតិបត្តិការកម្ពុជា-កូរ៉េ">
    <h3>*.png</h3>
    <img src="../media/HTML5.png" alt="HTML5">
    <h3>*.gif</h3>
