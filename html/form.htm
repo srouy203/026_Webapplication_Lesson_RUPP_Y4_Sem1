@@ -1,6 +1,7 @@
 <html>
    <head>
       <title>form សំណុំបែបបទ</title>
+      <link rel="stylesheet" type="text/css" href="../css/m4.css">
       <link rel="stylesheet" type="text/css" href="../css/form.css">
       <Link rel="stylesheet" href="../css/e5.css" type="text/css" />
    </head>
@@ -23,14 +24,24 @@
                ទំហំទិន្នន័យកំណត់ រីឯ post សុវត្ថិភាពនិងមិនកំណត់ទំហំទិន្នន័យ
                តែយឺត។ -->
          <form id="frm" action="អាសយដ្ឋាន" method="get"> 
+            <!-- label ធាតុសម្រាប់សរសេរចំណងជើងឲ្យធាតុដ៏ទៃ។ 
+                   តម្លៃគុណលក្ខណៈ for ជាអាយឌីរបស់ធាតុដែលត្រូវទទួល
+                   focus ពេលគេចុចលើ label។
+                   
+                   input ធាតុសម្រាប់ទទួលទីន្នន័យតាមច្រើនទម្រង់អាស្រ័យ
+                   តម្លៃគុណលក្ខណៈ type ដូចជា text, check box, 
+                   button ។ល។ វាត្រូវបានសម្គាល់ដោយគុណលក្ខណៈ ​id
+                   ដែលមិនមានតម្លៃដូចគ្នា រីឯ name អាចដូចគ្នា។ -->
             <div>
-               <label class="label1" for="txt">ប្រអប់អត្ថបទ</label>
+               <label for="txt" class="label1">ប្រអប់អត្ថបទ</label>
                <input type="text" id="txt" name="txt">
             </div>
             <div>
-               <label class="label1" for="pwd">ពាក្យសម្ងាត់</label>
+               <label for="pwd" class="label1">ពាក្យសម្ងាត់</label>
                <input type="password" id="pwd" name="pwd">
             </div>
+            <!-- fieldset ជាធាតុផ្តុំជម្រើសជាក្រុមហើយ
+            មានកូនធាតុ legend សម្រាប់សរសេរចំណងជើងក្រុមជម្រើស។ -->
             <fieldset>
                <legend>ជម្រើសអាចជ្រើសបានច្រើន</legend>
                <div>
@@ -48,7 +59,7 @@
             </fieldset>
             <fieldset>
                <legend>ជម្រើសអាចជ្រើសបានមួយ</legend>
-               <div>
+               <div><!-- radio ដាក់ឈ្មោះដូចគ្នាដើម្បីឲ្យជ្រើសបានតែមួយ។ -->
                   <input type="radio" id="rdo1" name="rdo">
                   <label for="rdo1">ជម្រើសទី១</label>
                </div>
@@ -61,7 +72,7 @@
                   <label for="rdo3">ជម្រើសទី៣</label>
                </div>
             </fieldset>
-            <div>
+            <div><!-- select ធាតុសម្រាប់បង្កើត ​drop down list។ -->
                <label for="ddl">ប្រអប់ទម្លាក់ទិន្នន័យឱ្យគេជ្រើសយកមួយ</label>
                <select id="ddl" name="ddl">
                   <option>ជម្រើសទី១</option>
@@ -71,8 +82,9 @@
             </div>
             <div>
                <label for="lst">បញ្ជីរាយទិន្នន័យឱ្យគេជ្រើសយកមួយឬច្រើន</label>
-               <!-- ថែម multiple ដើម្បីឲ្យគេអាចជ្រើសបានមួយឬច្រើន។
-               រីឯ size កំណត់ថាម្តងគេអាចមើលឃើញទិន្នន័យប៉ុន្មាន-->
+               <!-- select ធាតុសម្រាប់បង្កើត list box ពេលថែម multiple 
+                      ដើម្បីឲ្យគេអាចជ្រើសបានមួយឬច្រើន។
+                      រីឯ size កំណត់ថាម្តងគេអាចមើលឃើញទិន្នន័យប៉ុន្មាន។-->
                <select id="lst" name="lst" multiple size="2">
                   <option>ជម្រើសទី១</option><option>ជម្រើសទី២</option>
                   <option>ជម្រើសទី៣</option><option>ជម្រើសទី៤</option>
@@ -83,7 +95,7 @@
                <input type="reset" id="rst" name="rst" value="សារដើម">
                <input type="submit" id="smt" name="smt" value="បញ្ជូន">
                <!-- ប៊ូតុងសម្រាប់សរសេរកូដ javascript។
-                     សារដើមគឺសំអាតទិន្នន័យដើម្បីគេចាប់ផ្តើមសារឡើងវិញ
+                     សារដើមគឺសំអាតទិន្នន័យដើម្បីគេចាប់ផ្តើមសារឡើងវិញ។
                      បញ្ជូនគឺបញ្ជូនទិន្នន័យទៅកានមេម៉ាស៊ីន។-->
             </div>
          </form>
