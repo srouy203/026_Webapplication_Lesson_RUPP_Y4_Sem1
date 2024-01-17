@@ -1,32 +1,31 @@
-#dataCollection{
+#datacollection{
     width: 288px;
     margin: 16px auto;
+}
+#txt,#pwd{
+    width: 185px;
 }
 .label1{
     display: inline-block;
     width: 96px;
 }
-#txt, #pwd{
-    width: 185px;
-}
 legend{
     text-align: center;
 }
-input, fieldset, select {
+input, fieldset, select{
     border-radius: 5px;
 }
-fieldset > div {
-    display: inline-block;
-}
 input:hover, select:hover{
-    background-color: lightblue;
-    transition: all 0.3s ease-out;
+    background-color: lightskyblue;
+}
+fieldset > div{
+    display: inline-block;
 }
 select{
     width: 288px;
 }
-#btn, #rst, #smt{
-    border-width: 1px;
-    width: 92px;
+#btn,#rst, #smt{
+    border-width: 1px ;
+    width: 93px;
     margin-top: 4px;
 }

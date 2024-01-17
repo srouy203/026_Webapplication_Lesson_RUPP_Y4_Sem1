@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document
+
+
+        <!--
+             *** 16/10/23
+
+         -Block Element ជាធាតុបង្ហាញពីលើចុះក្រោម ហើយមានទទឹងប៉ុនផ្ទៃទំនេរ។
+      ឧ. h1, h2 ...., h6, p, ul,ol, dl, table។ល។
+
+      ***NOTED margin top ប៉ះ margin bottom ពេលគិតគឺមិនសរុបចូលគ្នាទេ ពោលគឺយកតម្លៃណាធំ
+      ***NOTED margin left ប៉ះ margin right ពេលគិតគឺមិនសរុបចូលគ្នាទេ ពោលគឺយកតម្លៃណាធំ
+
+      -Inline Element ជាធាតុបង្ហាញពីឆ្វេងទៅស្តាំ ហើយមានទទឹងប៉ុនខ្លឹមសារ (ព័ត៌មាន)។ល។
+        ឧ. a, span, sub, sup។ល។  
+
+        ***NOTE Inline គ្មានសិទ្ធកំណត់ width and height 
+        ***NOTED margin top and margin bottom មិនអាចប្រើបានក្នុង Inline element បានឡើយ
+        ***NOTED ចង់បានកម្ពស់ប្រើ line-height
+        ***NOTED
+
+      -display: inline-block ប្រែ inline element ជា inline-block គឺកូនកាត់ inline និង block។ 
+                កាត់ inline ត្រង់ចង្ហាញពីឆ្វេងទៅស្តាំ និង កាត់ block ត្រង់ប្រើ box ទាំងបួនបានដូច block element ។
+
+      -មានគម្លាតពី ៣px ទៅ ៥px។ បើចង់លប់គម្លាតនេះ ត្រូវដាក់ margin-left or margin-right ចន្លោះពី -3px ទៅ -5px
+        -->
+    </title>
+
+    <style>
+        .b, span {
+            background-color: yellow;
+            border: 1px solid black;
+        }
+        .b {
+            width: 170px;
+            height: 90px;
+        }
+        span {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div id="hMenu">
+        <!-- horizontal menu ម៉ឺនុយផ្តេក-->
+        <a id="current" href="#">ទំព័រដើម</a>
+        <a href="html/text.htm">អត្ថបទ</a>
+        <a href="html/image.htm">រូបភាព</a>
+        <a href="html/list.htm">បញ្ជី</a>
+        <a href="html/table.htm">តារាង</a>
+        <a href="html/media.htm">ពហុព័ត៌មាន</a>
+    </div>
+
+    <div class="b" style="margin-bottom: 16px;"></div>
+    <div class="b" style="margin-top: 32px;"></div>
+    <div class="b"></div>
+
+    <span>inline one</span><span>inline two</span><span>inline three</span>
+</body>
+</html>

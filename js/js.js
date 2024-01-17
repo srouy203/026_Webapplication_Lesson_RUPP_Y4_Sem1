@@ -1,7 +1,1 @@
-/*
-    Javascript ជាភាសាសម្រាប់ធ្វើអោយព័ត៌មានលើវេបផេកឬរចនាសម្ព័ន្ធវេបផេកផ្លាស់
-    ប្តូរពេលវាកំពុងដំណើរការដោយប្រើធនធាន (resources) របស់ម៉ាស៊ីនអ្នកទស្សនា។
-*/
-
-window.alert("External script...")
-
+window.alert("external script");

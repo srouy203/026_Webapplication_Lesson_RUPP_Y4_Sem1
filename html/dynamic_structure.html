@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dynamic Structure</title>
+    <style>
+        body{ 
+            font-family: 'Khmer OA Moul Light';
+        }
+        .green{
+            color: greenyellow;
+        }
+        .yellow{
+            color: yellow;
+        }
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <ul id="ds">
+        <li class="green">បៃតង</li>
+        <li class="yellow">លឿង</li>
+    </ul>
+
+    <script> 
+        var ele= document.createElement("li");// បង្កើតធាតុ
+        var con= document.createTextNode("ក្រហម");//បង្កើតខ្លឺមសារ
+        ele.appendChild(con);//បង្កើតខ្លឺមសារចូលក្នុងធាតុ
+        var ul = document.querySelector("ds");//ជ្រើសរើសធាំតុមានអាយឌិds
+        ul.appendChild(ele);//ថែមធាតុទៅក្នុងវេបផេក
+        var clas= document.createAttribute("class");// បង្កើត​ attribute
+        clas.value = "red";//កំណត់តម្លៃអោយ attribute
+        var li = document.querySelector("li:nth-child(3)"); // ជ្រើសរើសធាតុ
+        li.setAttribute(clas);//ថែម​ attribute ទៅក្នុងធាតុ
+    </script>
+</body>
+</html>

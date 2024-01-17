@@ -1,30 +1,34 @@
-/* child combinator ឬ child selector ជ្រើសយកកូនធាតុដោយប្រើសញ្ញ > ។
-កូនធាតុដោយប្រើសញ្ញា > ។
-របៀបសរសេរ មេធាតុ>កូនធាតុ
-descendant combinator ឬ descendant selector
-ជ្រើសយកធាតុជំនាន់ក្រោយដោយប្រើសញ្ញាដកឃ្លា។
+/* 
+child combinator ឬ​ child selector 
+ជ្រើសយកកូនធាតុដោយប្រើសញ្ញា​ >។
+របៀបសរសេរ មេធាតុ​ > កូនធាតុ
+
+descendant combinator ឬ​ descendant selector
+ ជ្រើសយកកូនធាតុជំនាន់ក្រោយដោយប្រើសញ្ញាដកឃ្លា​ ។
 របៀបសរសេរ ធាតុជំនាន់មុន ធាតុជំនាន់ក្រោយ
+
+pesudo-class selector ជា​ selector ដែលផ្ដើមដោយសញ្ញា : ដូចជា 
+
+:link ជ្រើសតំណដែលគេមិនទាន់បានចុចទស្សានា។
+:visited ជ្រើសតំណដែលគេបានចុចទស្សនារួចហើយ។
+:hover ជ្រើសធាតុដែលគេសំកាំង mouse ពីលើវា។
+
 */
+
 #hMenu > a {
-    text-decoration: none;
-    color: black;
     display: inline-block;
     padding: 4px 8px;
     width: 95px;
     text-align: center;
     margin-right: -5px;
 }
-/*
-pseudo-class selector ជា selector ដែលផ្តើមដោយសញ្ញា​ : ដូចជា៖
- :link ជ្រើសតំណដែលគេមិនទាន់បានចុចទស្សនារួចហើយ។
- :visited ជ្រើសតំណដែលគេបានចុចទស្សនារួចហើយ។
- :hover ជ្រើសធាតុដែលគេសំកាំង mouse ពីលើវា។
-*/
+
 #hMenu > a:link, #hMenu > a:visited {
     text-decoration: none;
     color: black;
 }
-#hMenu a:hover{
-    background: lightgray;
-    border-radius: 8px;
+
+#hMenu a:hover {
+   background: pink;
+   border-radius: 8px;
 }

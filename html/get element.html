@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>get element(s)</title>
+  </head>
+  <body>
+    <p>paragraph one</p>
+    <p class="tf">paragraph two</p>
+    <p id="three">paragraph three</p>
+    <p class="tf">paragraph four</p>
+    <p>paragraph five</p>
+
+    <script type="text/javascript">
+
+        var p = document.getElementsByTagName("p")
+        alert(p.length)
+
+
+        /* 
+      var tf = document.getElementsByClassName("tf");
+
+      if (tf.length > 0) alert("selected!");
+      else alert("fail to select");
+
+        array អាចផ្ទុលទិន្នយ័ច្រើនក្នុងប្រភេទតែមួយ
+
+        របៀបបង្កើត array
+            const ឈ្មោះ array = [ទិន្នន័យផ្ទុកក្នុងធាតុទី១,ទិន្នន័យផ្ទុកក្នុងធាតុទី២,ទិន្នន័យផ្ទុកក្នុងធាតុទី៣,.....];
+        ឬ
+            const ឈ្មោះ array = new Array(ទិន្នន័យផ្ទុកក្នុងធាតុទី១, ទិន្នន័យផ្ទុកក្នុងធាតុទី២, ទិន្នន័យផ្ទុកក្នុងធាតុទី៣,...);
+
+      ពាក្យដែលផ្ដើមដោយអក្សរធំសុទ្ទតែជា object in javascript
+
+      length ជា​ property នៃធឺរ៉េដែលប្រាប់ប្រវែងឬចំនួនធាតុដែលអឺរ៉េមាន។
+
+        collection = collection objects = array of objects
+         var three = document.getElementById("thre");
+         if(three =! null){
+             alert("selected!")
+         }else{
+             alert("fail to selected")
+         }
+         */
+    </script>
+  </body>
+</html>

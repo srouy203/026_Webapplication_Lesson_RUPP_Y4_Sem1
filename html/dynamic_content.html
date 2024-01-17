@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="km">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dynamic content</title>
+    <style>
+      span {
+        display: inline-block;
+        width: 320px;
+        line-height: 320px;
+        font-size: 106px;
+        text-align: center;
+        /* padding-top: 64px; */
+        border-radius: 50%;
+      }
+      #rnd1 {
+        background: greenyellow;
+      }
+      #rnd2 {
+        background: yellow;
+      }
+      #rnd3 {
+        background: red;
+      }
+      div {
+        width: 970px;
+        margin: 16px auto;
+      }
+      input{
+        width: 320px;
+        font-size: 24px;
+        border-radius: 8px;
+        margin-top: 4px;
+        border-width: 1px;
+      }
+      form{
+        width: 645px;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <span id="rnd1">0-9</span>
+      <span id="rnd2">1-8</span>
+      <span id="rnd3">2-7</span>
+      <form >
+        <input type="button" name="butStart" id="butStart" value="ផ្ដើម">
+        <input type="button" name="butStop" id="butStop" value="បញ្ឈប់">
+      </form>
+    </div>
+
+    <script type="text/javascript">
+      var rnd1 = document.getElementById("rnd1");
+      var rnd2 = document.getElementById("rnd2");
+      var rnd3 = document.getElementById("rnd3");
+      var butStart = document.getElementById("butStart");
+      var butStop = document.getElementById("butStop");
+      var intervalID = 0; //អថេរផ្ទុកដាយឌីនៃ loop ​ដែលកំណត់ដោយពេលវេលា
+
+      function random() {
+        rnd1.textContent = Math.floor(Math.random() * 10);
+        rnd2.textContent = Math.floor(Math.random() * 8 + 1);
+        rnd3.textContent = Math.floor(Math.random() * 6 + 2);
+      }
+
+      butStart.onclick = function(){
+        intervalID = window.setInterval(random, 1000)
+      };
+
+      butStop.onclick = function(){
+        window.clearInterval(intervalID)
+      };
+
+      // var text = setInterval(random, 1000);
+      
+
+    //   rnd1.addEventListener("mouseover", function () {
+    //     clearInterval(text);
+    //   });
+
+    //   rnd1.addEventListener("mousedown", function () {
+    //     var text = setInterval(random, 1000);
+    //   });
+    
+      // window.addEventListener("mousedown", function () {
+      //   var text = setInterval(auto, 1000);
+      // });
+
+    </script>
+  </body>
+</html>

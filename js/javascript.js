@@ -34,23 +34,81 @@
       ឬ 
          let ឈ្មោះអថេរ = តម្លៃដំបូង;
 
-
+         /*
     app = function + fuction + ... + function
     app = object + object + ... + object
         (class, property, method, event)
 
     - document object = html document (web page)
+    document.getElementById(អាយឌី) ជ្រើសរើសធាតុដែលស្គាល់អាយឌី
+    document.getElemenByTagName(ឈ្មោះ)​ ​ជ្រើសរើសធាតុ​មួយប្រភេទដោយសរសេឈ្មោះដូចជា a, span, ។ល៕
+    ​document.getElemenByClassName(ថ្នាក់) ជ្រើសរើសធាតុ​មួយឬច្រើនដែលថិតក្នុងថ្នាក់បញ្ចាក់។
 
-    document.getElementById(id) ជ្រើសយកធាតុណាដែលស្គាល់ id
-    document.getElementByTagName(name) ជ្រើសយកធាតុមួយប្រភេទដែលស្គាល់ឈ្មោះ ដូចជា a, span, div...
-    document.getElementByClassName(class) ជ្រើសធាតុមួយឬច្រីនដែលឋិតក្នុងថ្នាក់បានបញ្ជាក់។
+    ក្រោយពេលជ្រើសធាតុបានដោយប្រើ getElementById, getElementByTagName ឬ​ getElementByClassName
+    នោះអាចផ្លាស់ប្ដុរធាតុដោយប្រើ properties ឬ​ method  ដូចខាងក្រោម:
 
-    ក្រោយពេលជ្រើសរើសធាតុបានដោយប្រើ getElementById,
-    getElementByTagName ឬ getElementsByClassName នោះអាចផ្លាស់ប្តូរធាតុដោយប្រើ properties ឬ methods ដូចខាងក្រោម៖
+    element.textContent = ខ្លឹមសារ​សម្រាប់ប្ដុរខ្លឹមសារថិតនៅច្លោះស្លាកផ្ដើមនិងស្លាកបញ្ចប់នៃធាតុ
+    element.attribute = តម្លៃសម្រាប់ប្ដុរតម្លៃគុណលក្ខណះនៃធាតុ
+    element.style.property = តម្លៃសម្រាប់ប្ដរតម្លៃនៃការរចនានៃលក្ខណះនៃការចនាដែលប្រៀបដូចទៅនឹង property:value ក្នុង​ css។
 
-    element.textContent = ខ្លឹមសារសម្រាប់ប្តូរខ្លឹមសារថិតនៅចន្លោះស្លាកផ្តើម និងស្លាកបញ្ចប់នៃធាតុ
-    element.attribute = តម្លៃសម្រាប់ប្តូរតម្លៃគុណលក្ខណៈនៃធាតុ
-    element.style.property = តម្លៃសម្រាប់ប្តូរតម្លៃនៃការរចនានៃលក្ខណៈនៃការរចនា ដែលប្រៀបដូចទៅនឹង property:value ក្នុង CSS។
 
+    Javascript object 
+      Math ជាវត្ថុប្រើប្រាស់បំពេញមុខងារគណិតវិទ្យាដូចជា​ លេខចៃដន្យ បង្កត់លេខ។ល។
+      random() ជា Method ដែលបំពេញមុខងារបង្កប់ចុះនូវលេខទសភាគដោយចៃដន្យចន្លោះ ០​ និង ១។
+      floor(លេខទសភាគ) បំពេញមុខងារបង្កត់ចុះនូវលេខទសភាគបានបញ្ញាក់។
+      ceil(លេខទសភាគ)​ បំពេញមុខងារបង្កត់ឡើងនូវលេខទសភាគបានបញ្ញាក់។
+      round (លេខទសភាគ)​ បំពេញមុខងារបង្កត់ចុះឬឡើងនូវលេខទសភាគបានបញ្ញាក់
+                           អាស្រ័យផ្នែកទសភាគតិចជាង៥ឬធំជាងឬស្មើ៥។
+                           
+
+      windown object ជាវត្ថុប្រើប្រាស់អាចអោយ javascript ប្រើមុខងារនានា
+            នៃ tab មួយរបស់ browser ដូចជា កំណត់ពេលអោយកិច្ចការដំណើរការ លុបចោល
+            នូវពេលដែលកិច្ចការត្រូវដំណើរការ។ ល។
+      setInterval (កិច្ចការ, ពេលគិតជាមិលីវិនាទី) ជា method មានមុខងារធ្វើអោយ
+            ការ (function) ដំណើរការសារចុះសារឡើងមិនកំណត់ចំនួនដង អោយតែដល់ពេលវេលា
+            ជាមិលីវិនាទីបានបញ្ជាក់។
+      clearInterval (អាយឌីសម្គាល់ដំណើរការ) លុបចោលពេលធ្វើកិច្ចការដំណើរការបាន
+            កំណត់ដោយ setInterval។
+
+      ****** ប្រើ event របស់ object
+            របៀបទី១
+                ធាតុបានជ្រើសរើស .addEventListener ("ឈ្មោះevent", ឈ្មោះ function);
+            របៀបទី២
+                ធាតុបានជ្រើសរើស.onឈ្មោះ event = ឈ្មោះ function;
+                ឈ្មោះ event ប្រើប្រាស់ញឹកញាប់មាន click, change, focus, blur។​ល។
+
+
+      ដូចការរចនា(dynamic style)
+            ជាធាតុជ្រើសរើស.style.ឈ្មោះproperty = តម្លៃថ្មី
+        *ចំណាំ ពេលសរសេរឈ្មោះ CSS property ក្នុង javascript មិនប្រើសញ្ញា - ទេ តែរាល់អក្សរទី១នៃពាក្យត្រូវដូូរទៅអក្សរធំ
+              ដោយគិតចាប់ពីពាក្យទី២ឡើងទៅដូចជា background-color សរសេរ backgroundColor វិញទើបត្រួវ ។
+
+
+      Javascript selector
+      ជ្រើសយកធាតុមួយ
+      ​​​​  document.querySelector("CSS selector")
+
+      ជ្រើសយកធាតុជាច្រើន
+         document.querSelectorAll("CSS selector")
+      *ចំណាំរាល់ CSS selector អាចប្រើក្នុង Javascript បានដូចជា #អាយឌី .ថ្នាក់។ល។
+      បង្កើតធាតុ
+         document.crateElement("ធាតុត្រូវបង្កើត");
+      បង្កើតខ្លឹមសារ
+         document.createTextNode("ខ្លឺមសារ");
+         ថែមខ្លឺសារចូលក្នុងធាតុ
+         ធាតុ.appendChild(ខ្លឺមសារ);
+      ថែមធាតុចូលក្នុងវេបផេក
+      មេធាតុ.appendChild(កូនធាតុ);
+
+      បង្កើតគុណលក្ខណះ
+         document.crateAttribute("ឈ្មោះគុណលក្ខណះត្រូវបង្កើត");
+      កំណត់តម្លៃអោយគុណលក្ខណះ
+         គុណលក្ខណះ.value="តម្លៃត្រូវផ្ដល់អោយគុណលក្ខណះ";
+      ថែមគុណលក្ខណះអោយធាតុ
+         ធាតុ.setAttributeNode(គុណលក្ខណះ);
+      លុបធាតុ
+         ធាតុដែលត្រូវលុប.remove();
+      លុបគុណលក្ខណះ
+         ធាតុដែលមានគុណលក្ខណះត្រូវលុប.removeAttrubte("ឈ្មោះគុណលក្ខណះត្រូវលុប");
+      
 */
-

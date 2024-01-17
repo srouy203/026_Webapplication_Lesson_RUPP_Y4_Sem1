@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="kh">
+<head>
+    <title> dynamic attribute</title>
+    <style>
+        .hidden{
+            width: 0px;
+            height: 0px;
+            float: right;
+        }
+        div,#feature{
+            width: 500px;
+            height: 350px;
+        }
+        div{
+            margin: 0 auto;
+        }
+        #title{
+            font-family: 'khmer OS Moul Light';
+            background: greenyellow;
+            display: block; 
+            width: 504px;
+            margin: -10px 0 0 -2px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+        <img class="hidden" src="../media/Ceremony Hall.jpg" alt="">
+        <img class="hidden" src="../media/IFL.jpg" alt="វិទ្យាស្ថានភាសាបរទេស">
+        <img class="hidden" src="../media/CJCC.jpg" alt="មជ្ឈមណ្ឌលប្រតិបត្តិការកម្ពុជាជប៉ុន">
+        <img class="hidden" src="../media/CKCC.jpg" alt="មជ្ឈមណ្ឌលប្រតិបត្តិការកម្ពុជាកូរេ">
+        <img id="feature" src="../media/BuildingA.jpg" alt="អាគារអេ">
+        <span id="title">អាគារអេ</span>
+
+        <script type="text/javascript">
+            /*
+                បង្កើតអឺរ៉េពីរវិមាត្រ(តារាង)ជួរឈរទី១ផ្ទុកអាសយដ្ធានរួបភាព​ ជួរឈរទី២ផ្ទុកចំណងជើងរូបភាព។
+                ចំណាំវិមាត្រទី១គឺជួរដេកនិងវិមាត្រទី២គឺជួរឈរ
+            */
+           var slides = [
+                ["../media/BuildingA.jpg","អាគារអេ"],
+                ["../media/Ceremony Hall.jpg","សាលបុណ្យ"],
+                ["../media/IFL.jpg","វិទ្យាស្ថានភាសាបរទេស"],
+                ["../media/CJCC.jpg","មជ្ឈមណ្ឌលប្រតិបត្តិការកម្ពុជាជប៉ុន"],
+                ["../media/CKCC.jpg","មជ្ឈមណ្ឌលប្រតិបត្តិការកម្ពុជាកូរេ"]
+           ]
+            var feature = document.getElementById("feature");
+            var title  = document.getElementById("title");
+            var i=0;
+            var colors=[
+                ["Geenyellow","white"],
+                ["Yellow","black"],
+                ["Orange","white"],
+                ["Red","white"],
+                ["Pink","black"],
+            ]
+            function slide(){
+                // feature.src="../media/RUPP" + ++i + ".jpg";
+                feature.src = slides[++i][0];
+                title.src = slides[i][1];
+                title.style.backgroundColor=colors[i][0];
+                title.style.color=colors[i][1];
+                if(i==4)
+                i=-1;
+            }
+            window.setInterval(slide, 1000)
+        </script>
+    </div>
+
+</body>
+</html>

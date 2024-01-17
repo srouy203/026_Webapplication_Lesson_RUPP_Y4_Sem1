@@ -30,7 +30,7 @@
     <!-- 
     06/10/20023
     Style ជាគុមលក្ខលះសម្រាប់សរសេរ​ css ក្នុងធាតុមួយ។
-    <Style ="property:value;"> ... </Style>
+    <Style = "property:value;"> ... </Style>
     styleing text ការរចនាអត្ថបទ
     color: លេខឬឈ្មោះសម្គាល់ព៍ណ។
 
@@ -70,23 +70,26 @@
     5- Fantasy
   -->
 
-  <!------------ 09-10-2023 -------------->
-  <!-- 
-    ក្នុង CSS ចាត់ធាតុរបស់ HTML ទាំងអស់ជាប្រអប់ មានដូចជា ប្រអប់ខ្លឹមសារ (content)
-    ប្រអប់គម្លាតទ្រនាប់ (padding) ប្រអប់ស៊ុម (border) និងប្រអប់រឹម (margin)។​ល។ 
+    <!--
+    09/10/2023
+    ្នុង CSS ចាត់ធាតុរបស់ HTML ទាំងអស់ជាប្រអប់ មានដូចជា ប្រអប់ខ្លឹមសារ (content)
+    ប្រអប់គម្លាតទ្រនាប់ (padding) ប្រអប់ស៊ុម (border) និងប្រអប់រឹម (margin)។ ល។
 
-    - ប្រអប់ខ្លឹមសារ
-      width ទទឹង និង height កម្ពស់
+    - ប្រអប់ខ្លឺមសារ
+    ​width ទទឺងនិង height កម្ពស់
+
     - ប្រអប់គម្លាតទ្រនាប់
-      padding-top គម្លាតទ្រនាប់ខាងលើ
-      padding-right គម្លាតទ្រនាប់ខាងស្តាំ
-      padding-bottom គម្លាតទ្រនាប់ខាងក្រោម
-      padding-left គម្លាតទ្រនាប់ខាងឆ្វេង
-    ទម្រង់កាត់
-      padding លើ ស្តាំ ក្រោម ឆ្វេង
-      padding លើ ឆ្វេងស្តាំ ក្រោម
-      padding លើក្រោម ឆ្វេងស្តាំ
-      padding លើក្រោមឆ្វេងស្តាំ
+    padding-top គម្លាតស្រទាប់ខាងលើ
+    padding-right គម្លាតទ្រនាប់ខាងស្ដាំ
+    padding-bottom គម្លាត់ទ្រនាប់ខាងក្រោម
+    padding-left គម្លាតទ្រនាប់ខាងឆ្វេង
+
+    តម្រង់កាត់
+
+    padding លើ ស្ដាំ ក្រោម ឆ្វេង
+    padding លើ​ ​ឆ្វេងស្ដាំ ក្រោម
+    padding លើក្រោម ឆ្វេងស្ដាំ
+    padding ​លើក្រោមឆ្វេងស្ដាំ
 
     - ប្រអប់ស៊ុម
       border-style ក្បាច់ស៊ុម dotted dashed solid double inset outset groove ridge none hide
@@ -98,37 +101,9 @@
         border-right: កម្រាស់ ក្បាច់ ព័ណ
         border-left: កម្រាស់ ក្បាច់ ព័ណ
         border-bottom: កម្រាស់ ក្បាច់ ព័ណ
+
+
   -->
-
-  <!---------------- 16-10-2023 --------------->
-
-  <!-- 
-    - ប្រអប់រឹម (margin box)
-      margin-top រឹមខាងលើ
-      margin-right រឹមខាងស្តាំ
-      margin-bottom រឹមខាងក្រោម
-      margin-left រឹមខាងឆ្វេង
-    ទម្រង់កាត់
-      margin លើ ស្តាំ ក្រោម ឆ្វេង
-      margin លើ ឆ្វេងស្តាំ ក្រោម
-      margin លើក្រោម ឆ្វេងស្តាំ
-      margin លើក្រោមឆ្វេងស្តាំ
-
-    - Block Element ជាធាតុបង្ហាញពីលើចុះក្រោម ហើយមានទទឹងប៉ុនផ្ទៃទំនេរ។
-    ឧ. h1, h2 ...., h6, p, ul,ol, dl, table។ល។
-    (margin left និង right ឬ top និង bottom មិនសរុបចូលគ្នាទេ តែវានឹងយកខាងណាដែលធំជាង)
-
-
-    - Inline Element ជាធាតុបង្ហាញពីឆ្វេងទៅស្តាំ ហើយមានទទឹងប៉ុនខ្លឹមសារ (ព័ត៌មាន)។ល។
-    ឧ. a, span, sub, sup។ល។
-    (Inline យើងមិនអាចកំណត់ width និង heigh បានទេ។)
-    (Inline មិនអាចប្រើ margin top និង bottom បានទេ)
-
-    Inline Element និង Block Element គម្លាតពីគ្នាពី 3px ទៅ 5px បើចង់លុបគម្លាតនេះត្រូវដាក់
-	  margin-left ឬ margin-right ចន្លោះពី -3px ទៅ -5px
-
-   -->
-
 
     <style>
       /* រើសធាតុទាំងណាថិតក្នុងថ្នាក់​​ medium */
@@ -170,29 +145,37 @@
   </head>
 
   <body>
+    <!--09/10/2023-->
 
+    <p style="background-color: lightgray">ទំហំដើម</p>
+    <p style="background-color: lightgray; width: 20px; height: 50px">
+      ទំហំបានកំណត់
+    </p>
+    <span>ផ្នែកតូចតាច</span>
     <!-- 06/10/2023 -->
-    <h1 
-    style="
-    text-shadow: 2px 2px gray;
-    text-align: center;
-    color: dodgerblue;
-    text-decoration: overline blue double 2px;
-    ">
+    <h1
+      style="
+        text-shadow: 2px 2px gray;
+        text-align: center;
+        color: dodgerblue;
+        text-decoration: overline blue double 2px;
+      "
+    >
       សេចក្ដីណែនាំឲស្កាល់
     </h1>
-    <br>
-    <p 
-    style="
-    font-size: 30px;
-    font-style: italic;
-    font-family: 'Courier New', Courier, monospace;
-    text-indent: 64px ;
-    text-transform: uppercase;
-    ">
-    The mappedBy attribute contains the name ការរចនាពុម្ភអក្សរ
-  </p>
-   <!-- end -->
+    <br />
+    <p
+      style="
+        font-size: 30px;
+        font-style: italic;
+        font-family: 'Courier New', Courier, monospace;
+        text-indent: 64px;
+        text-transform: uppercase;
+      "
+    >
+      The mappedBy attribute contains the name ការរចនាពុម្ភអក្សរ
+    </p>
+    <!-- end -->
 
     <div id="hMenu">
       <!-- horizontal menu ម៉ឺនុយផ្តេក-->
@@ -210,18 +193,5 @@
     <img class="media" src="/media/RUPP3.jpg" alt="" />
     <img class="media" src="/media/RUPP4.jpg" alt="" />
     <img class="media" src="/media/RUPP5.jpg" alt="" />
-
-    <p style="border: 5px solid black;">solid</p>
-    <p style="border: 5px dotted black;">dotted</p>
-    <p style="border: 5px dashed black;">dashed</p>
-    <p style="border: 5px double black;">double</p>
-    <p style="border: 16px inset black;">inset</p>
-    <p style="border: 16px outset black;">outset</p>
-    <p style="border: 16px groove black;">groove</p>
-    <p style="border: 16px right black;">right</p>
-    <p style="border: 16px solid black;">solid</p>
-    <p style="border: none"></p>
-    <p style="border: hidden"></p>
-
   </body>
 </html>
